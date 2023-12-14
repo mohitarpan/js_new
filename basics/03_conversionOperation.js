@@ -40,5 +40,6 @@ let str2 = "namste"
 // console.log(1 + "2");
 // console.log("1" + 2 + 2)
 // console.log(1 + 2 +"3")
-console.log(+trur) // not a write way to write a code 
+console.log(true) // not a write way to write a code 
 // output is 1 
+console.log(+"")//only parentheses gives the value 0 and it is a bad practices
