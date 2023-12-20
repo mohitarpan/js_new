@@ -6,7 +6,7 @@ const repocount = 50;
 // string interpulation using in backtics
 console.log(`Hello my name is ${name} and my repo count is ${repocount}`);
 // how to Declare string another way 
-const gameName = new  String('arpan-yadav- powerful-employee');
+const gameName = new  String('');
 //console.log(gameName[0]);
 //console.log(gameName.__proto__);
 
@@ -53,7 +53,22 @@ const gameName = new  String('arpan-yadav- powerful-employee');
 // console.log(newStringOne.trim());
 
 
-const url = "https://hitesh.com/arpan%20Yadav"
-// console.log(url.replace('%20','-'));zzzzzz
-console.log(url.includes('hitesh'));
-console.log(gameName.split('-'));// use to string into array  
+// const url = "https://hitesh.com/arpan%20Yadav"
+// // console.log(url.replace('%20','-'));zzzzzz
+// console.log(url.includes('hitesh'));
+// console.log(gameName.split('-'));// use to string into array  
+// // string is empty and separator is non-empty
+// console.log(gameName.split('b'))
+// console.log(gameName.split('')) /// o/p [] // string and separator are both empty strings
+// const names = "Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand ";
+
+// console.log(names);
+
+// const re = /\s*(?:;|$)\s*/;
+// const nameList = names.split(re);
+
+// console.log(nameList);
+// const contentString = "Hello, world";
+// const elem = document.createElement("small");
+// elem.innerText = contentString;
+// document.body.appendChild(elem);
