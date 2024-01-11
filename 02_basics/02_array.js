@@ -20,3 +20,9 @@ console.log(Array.isArray("Arpan Yadav"))
 
 console.log(Array.from("Arpan Yadav"))// from is used for convert any thing in array if type was not in array it also take objects and strings too.
 console.log(Array.from({name:"Arpan"}))//if from fail to make array it gives empty array []
+ let score1 = 100
+ let score2 =200
+
+ let score3 = 300
+ console.log(Array.of(score1,score2,score3));// of methid is used to buind diffrent thing into one array.
+  
