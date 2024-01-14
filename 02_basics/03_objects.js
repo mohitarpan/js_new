@@ -41,6 +41,8 @@ jsUser.greeting = function(){
     console.log("Hello Arpan user");
 }
 jsUser.greetingTwo = function(){
-    console.log(`Hello Arpan, ${this.name}`);// here is string interpulation 
+    console.log(`Hello Sir, ${this.name}`);// here is string interpulation 
 }
 console.log(jsUser.greetingTwo());
+console.log(jsUser.greeting());
+//  it gives undefine after using greating function 
