@@ -31,3 +31,8 @@ console.log(jsUser.email);
 console.log(jsUser["email"]);
 console.log(jsUser["full name"]);// here . fullname is not able to access but in square brackit it will take or fetch the value 
 console.log(jsUser[mySym]);//when we did not use "" it will shows undefine 
+
+jsUser.email ="arpanyadav.01@gmail.com"
+Object.freeze(jsUser)
+jsUser.email ="1900300100044@ipec.org.in"// here after freezing the object it will not update the value so it will so arpanyadav.01@gmail.com
+console.log(jsUser);
