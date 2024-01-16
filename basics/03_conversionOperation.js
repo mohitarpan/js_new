@@ -40,6 +40,7 @@ let str2 = "namste"
 // console.log(1 + "2");
 // console.log("1" + 2 + 2)
 // console.log(1 + 2 +"3")
+// console.log("3"-"2"+ 1);  - operator play important role in this 
 console.log(true) // not a write way to write a code 
 // output is 1 
 console.log(+"")//only parentheses gives the value 0 and it is a bad practices

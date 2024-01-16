@@ -39,5 +39,6 @@ const obj5 = {a:1,b:0}
 const obj6 = {b:1,c:1}
 const obj7 = {c:0,d:1}// key and  value \
 const obj8 = Object.assign({},obj5,obj6,obj7)
-console.log(obj8);
+ console.log(obj8);
+
  

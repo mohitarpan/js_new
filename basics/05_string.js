@@ -72,3 +72,4 @@ const gameName = new  String('');
 // const elem = document.createElement("small");
 // elem.innerText = contentString;
 // document.body.appendChild(elem);
+log
