@@ -37,8 +37,35 @@ const obj4 = Object.assign([],obj1,obj2,obj3)// assign(target, obj1,obj2,obj3...
 // console.log(obj4);
 const obj5 = {a:1,b:0}
 const obj6 = {b:1,c:1}
-const obj7 = {c:0,d:1}// key and  value \
-const obj8 = Object.assign({},obj5,obj6,obj7)
- console.log(obj8);
+const obj7 = {c:0,d:1}// key and  value 
+// const obj8 = Object.assign({},obj5,obj6,obj7)// we can add mutiple objects together by using assign 
+
+/// Spread operator ex glass pakda aur chod diya it is spreaded over the ground
+const obj8 = {...obj5,...obj6,...obj7} // with the helpe of spread opearator we can put all object in one without using target and source concept or assign method
+// console.log(obj8);
+
+const User = [
+    {
+        id: 1,
+        email: "a@gmail.com"
+    }, {
+        id: 2,
+        email: "b@gmail.com"
+    }, {
+        id: 4,
+        email: "c@gmail.com"
+    }, {
+        id: 4,
+        email: "d@gmail.com"
+    }
+]
+console.log(...User);
+console.log(User[0].email);
+console.log(rider);
+console.log(Object.keys(rider));// iw we apply this on object it saperate out all the keys into different array
+console.log(Object.values(rider));
+console.log(Object.entries(rider));// it puts all keys and value pair into array 
+// 
+console.log(rider.hasOwnProperty('isloggedIn'));// it is case sensitive 
 
  
