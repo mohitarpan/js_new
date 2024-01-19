@@ -59,13 +59,28 @@ const User = [
         email: "d@gmail.com"
     }
 ]
-console.log(...User);
-console.log(User[0].email);
-console.log(rider);
-console.log(Object.keys(rider));// iw we apply this on object it saperate out all the keys into different array
-console.log(Object.values(rider));
-console.log(Object.entries(rider));// it puts all keys and value pair into array 
-// 
-console.log(rider.hasOwnProperty('isloggedIn'));// it is case sensitive 
+// console.log(...User);
+// console.log(User[0].email);
+// console.log(rider);
+// console.log(Object.keys(rider));// iw we apply this on object it saperate out all the keys into different array
+// console.log(Object.values(rider));
+// console.log(Object.entries(rider));// it puts all keys and value pair into array 
+// // 
+// console.log(rider.hasOwnProperty('isloggedIn'));// it is case sensitive 
 
- 
+/// destructure 
+
+const course = {
+    coursename: "Full js video ",
+    price: "999",
+    courseInstructor: "Tony Stark"
+}
+//course.courseInstructor
+console.log(courseInstructor);
+const { courseInstructor} = course // it is the method or way to destructure;
+// Destructuring is used in react example
+// const navbar = ({panycom}) => {
+
+// }
+// console.log(navbar(panycom ="hitesh"))
+
