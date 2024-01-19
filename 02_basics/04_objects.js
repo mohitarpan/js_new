@@ -84,3 +84,16 @@ const { courseInstructor} = course // it is the method or way to destructure;
 // }
 // console.log(navbar(panycom ="hitesh"))
 
+// /// Apis 
+// how json look like
+// {
+//     "name": "Arpan",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// } 
+// some time it may be in th form of array to 
+[
+    {},
+    {},
+    {}
+]
