@@ -25,4 +25,13 @@ function addToNUmber(num3,num4) {
     return num3 + num4;
 }
 const result = addToNUmber(3,5)
-console.log("Result: ", result);
+// console.log("Result: ", result);
+
+function loginUserMessage(username){
+    if(username === undefined){// it is also write as if(!username)
+        console.log("Please enter a username");
+        return
+    }
+    return `${username} just login in`
+}
+console.log(loginUserMessage());
