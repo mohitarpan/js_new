@@ -35,3 +35,10 @@ function loginUserMessage(username){
     return `${username} just login in`
 }
 console.log(loginUserMessage());
+function rob(lock1, lock2){
+    if(lock1 === null){
+        console.log(lock1);
+        return
+    }
+
+}
