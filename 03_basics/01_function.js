@@ -27,18 +27,25 @@ function addToNUmber(num3,num4) {
 const result = addToNUmber(3,5)
 // console.log("Result: ", result);
 
-function loginUserMessage(username){
+function loginUserMessage(username = "sam"){// sam is default value is there no input 
     if(username === undefined){// it is also write as if(!username)
         console.log("Please enter a username");
         return
     }
     return `${username} just login in`
 }
-console.log(loginUserMessage());
-function rob(lock1, lock2){
-    if(lock1 === null){
-        console.log(lock1);
-        return
-    }
+// console.log(loginUserMessage());
+// function rob(lock1, lock2){
+//     if(lock1 === null){
+//         console.log(lock1);  ////use less
 
+//         return
+//     }
+
+// }
+
+function CalculateCartPrice(...num1){ /// ... in parameter denoted as REST operator which include all arguments in single array 
+    return num1
 }
+console.log(CalculateCartPrice(200,300,400))// op is [200,300,400]
+ 
