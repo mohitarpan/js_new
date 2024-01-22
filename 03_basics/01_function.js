@@ -45,7 +45,28 @@ function loginUserMessage(username = "sam"){// sam is default value is there no 
 // }
 
 function CalculateCartPrice(...num1){ /// ... in parameter denoted as REST operator which include all arguments in single array 
-    return num1
+    return num1 // if we pass a parameter as (val1,val2,...num1) so the o/p must me val1 have 200 anda val2 have 300 and num1 have rest of the values or agrumnets passed 
 }
 console.log(CalculateCartPrice(200,300,400))// op is [200,300,400]
+ const user = {
+    username: "Kaushal",
+    price: 2000
+ }
  
+ function handleOnject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+ }
+
+handleOnject(user) //compulsory paas the object here 
+ // type
+ handleOnject({
+    username: "Arpan",
+    price:299
+ })
+ const myNameArray = [200,400,600,500,800]
+
+ function  returnNextArray(myNameArray){
+    return myNameArray[1]
+ }
+ console.log(returnNextArray(myNameArray));
+console.log(returnNextArray([200,300,600,500,800]));
