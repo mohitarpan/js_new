@@ -28,11 +28,21 @@ function one() {
     const username ="Arpan"
     function two() {
         const website = "youtube"                           // Ice cream method bachhe and bade 
-        console.log(username)
-        console.log(website);
+        // console.log(username)
+        // console.log(website);
     }
     
    console.log(two());// two()
 
 }
 // console.log(one()); // one()
+if(true) {
+    const username = "yadav"
+    if(username === "yadav") {
+        const website = " arpanport"
+        console.log(username + website);
+    }
+    // console.log(website);// we can not access the website variable out of the scope it is declared in nested if we commented even this whole is showing
+    // beacuse username is also out of the scope of first if 
+}
+// console.log(username);
