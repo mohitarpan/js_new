@@ -8,14 +8,31 @@ if(1) {
     let a =20
     const b = 30 // Block scope
     // var c = 10
-    console.log("Inner: ", a);
+    // console.log("Inner: ", a);
 }
 // const array =[10,20,30,40]
 // for (let i = 0; i < array.length; i++) {
 //     const element = array[i];//i alwasys remain in block scope and user can access only in block scope 
     
 // }
- console.log(a); // a is declared inside of the if scope or inner scope 
+//  console.log(a); // a is declared inside of the if scope or inner scope 
 // console.log(b);
 // console.log(c);
 //  console.log(i);
+
+// nested scoping
+// nested function can access the variable of parent functions 
+
+
+function one() {
+    const username ="Arpan"
+    function two() {
+        const website = "youtube"                           // Ice cream method bachhe and bade 
+        console.log(username)
+        console.log(website);
+    }
+    
+   console.log(two());// two()
+
+}
+// console.log(one()); // one()
