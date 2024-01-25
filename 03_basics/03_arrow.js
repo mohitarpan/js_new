@@ -37,10 +37,9 @@ const chai = () => {
 // }
 // Implicit Return 
 
-// It usually write for one line of code like we did not need return and {} in the syntax without that we can do 
+// It usually write for one line of code like we did not need return and {} in the syntax without that we can do the same 
 
-const addTwo = (num1,num2) => {
-    return num1 + num2
-}
+// const addTwo = (num1,num2) => num1 + num2
+const addTwo = (num1,num2) => ({username:"logan"}) // need of paraenthes for wraping into a object in that other it gives undefine
 console.log(addTwo(3,5));
 
