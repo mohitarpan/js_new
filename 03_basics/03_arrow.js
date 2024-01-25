@@ -14,9 +14,33 @@ const user = {
 //************************* important Note  */
 // browser have there global object by the name of Window object
 
-function chai() {
-    let username ="Avinash"
-    console.log(this.username); 
-    // i can't able to use this i this fuction but in objects we can do it there 
+// function chai() {
+//     let username ="Avinash"
+//     console.log(this.username); 
+//     // i can't able to use this i this fuction but in objects we can do it there 
+// }
+// chai()
+// const chai = function () {
+//     // let username ="sawera"
+//     console.log(this); // this behave the same for any type of function decleration(did not behave like hoisting )
+// }
+// chai()
+//Aarrow function. if we executed "this" then it give empty objects just like if you executed outside the function 
+const chai = () => {
+    // let username ="sawera"
+    console.log(this); // this behave the same for any type of function decleration(did not behave like hoisting ) here is also undefined 
 }
-chai()
+// chai()
+////////Basic arrow function 
+// const addTwo = (num1,num2) => {
+//     return num1 + num2
+// }
+// Implicit Return 
+
+// It usually write for one line of code like we did not need return and {} in the syntax without that we can do 
+
+const addTwo = (num1,num2) => {
+    return num1 + num2
+}
+console.log(addTwo(3,5));
+
