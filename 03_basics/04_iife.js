@@ -19,3 +19,6 @@
 })('Aepan')
 // it gives an error so we need a semicoulm 
 // it have that property iife dont know where to end the function without that we can not predicts that function can be ended.
+
+
+//  we can write two concecutive iffe only puting semicoloum after dirst iffe
