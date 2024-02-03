@@ -24,7 +24,7 @@ const isUserloggedIn = true
 // }
 // console.log(`user Power: ${power}`);
 
-//  how 'if' short hand notation is done 
+//  how 'if' short hand notation is done // scope are consider as inplicit means supposed
  const  balance = 1000
 // if (balance > 500) console.log("test"),// Mostly in short hand notation line must be written in single line it does not allow multiple like "usually" 
 // console.log("test2for ,");
