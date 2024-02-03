@@ -30,4 +30,15 @@ const isUserloggedIn = true
 // console.log("test2for ,");
 //  u can use , to perfoem multiple line of code in this but it is not good practice 
 
-
+///-------------------------------------------------
+////------------------------------------------------------------
+const userLoggedIn = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+if(userLoggedIn && debitCard && true){
+    console.log("Allow to buy course");
+}
+if(loggedInFromEmail || loggedInFromGoogle || false){
+    console.log("user loged in" );
+}
