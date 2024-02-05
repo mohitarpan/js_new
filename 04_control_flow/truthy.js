@@ -37,4 +37,7 @@ val1 = ""?? null//empty value but work
 //  Terniary operator
 // condition ? true : false
 const iceTeaprice = 100
-iceTeaprice <= 80 ? console.log("less than 80"): console.log("morethan 80");;
+iceTeaprice <= 80 ? console.log("less than 80"): console.log("morethan 80");
+
+const iceTeapricue = 300
+iceTeaprice <= 80 ? console.log("less than 80"): console.log("morethan 80");
