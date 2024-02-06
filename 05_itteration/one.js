@@ -26,15 +26,16 @@ for (let o = 0; o < myArray.length; o++) {
 //  
 for (let index = 0; index < 20; index++) {
     if( index == 5){
-        console.log(`Detected 5`);
+        // console.log(`Detected 5`);
         break// one break is executed it will breact the floe and comes out of the for loop and control reaches to line no 34
     }
-    console.log(`value of i is ${index}`);
+    // console.log(`value of i is ${index}`);
 }
 for (let index = 0; index < 20; index++) {
     if( index == 5){
         console.log(`Detected 5`);
-        continue
+        continue// it skip that part and continue as a name suggest it will break the flow and reaches back to the previous location by increae the i value and work untill
+        // loop is over or terminated 
     }
     console.log(`value of i is ${index}`);
 }
