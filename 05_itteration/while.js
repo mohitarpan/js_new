@@ -16,9 +16,9 @@ while (arr<myArray.length) {
 //  in this loop condition check at the last first we are more focused working of a loop
 
 let score =1;// if we put the value of score is 11 
-// becuase of the syntax or structure of loop it will run  first and give o/p as score is 11 then
-// go for the condition check 
+// becuase of the syntax or structure of loop it will run  first and give o/p as score is 11 then--
+// go for the condition check and if it false loop stops 
 do {
     console.log(`Score is ${score}`);
     score++
-} while (score<=10);
+} while (score<=10);// it uses rearly 
