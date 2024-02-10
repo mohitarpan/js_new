@@ -27,4 +27,15 @@ const map = new Map()
 map.set('IN', "India")
 map.set('usa', "United state of America")
 map.set('Fe', "france")
-console.log(map);
+// map only take unique values and always in order so if we repeat in key and india value it will consider only once 
+// console.log(map);
+
+// loops on map 
+for (const key of map) {
+    // console.log(key); * It return the value in the error 
+}
+
+for (const [key,value] of map) {
+    console.log(key,value);
+    
+}
