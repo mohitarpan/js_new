@@ -37,4 +37,14 @@ mycoding.forEach((item) =>{
     // console.log(item.languagename);/// here we can fatch the objects from array using forEach loop
 })
 
-const new = Map
+
+const map = new Map()
+map.set('IN', "India")
+map.set('usa', "United state of America")
+map.set('Fe', "france")
+
+map.forEach((key,values) =>{
+    console.log(key,values);
+})
+//  if we gives key as argument of arrow function it return the map values 
+// it gives values first then key 
