@@ -32,10 +32,21 @@ map.set('Fe', "france")
 
 // loops on map 
 for (const key of map) {
-    // console.log(key); * It return the value in the error 
+    // console.log(key);// * It return the value in the error 
 }
 
 for (const [key,value] of map) {
-    console.log(key,value);
-    
+    console.log(key,':-',value);
 }
+
+const myObj = {
+    'game1' : 'NFS',
+    'game2' : 'roadras',
+    'game3' : 'gta5'
+}
+// for (const [key,value] of myObj) {
+//     console.log(key, ':-', value);
+// }
+
+// for_of loop is not working on objects.....
+// objects is not itteratable  
