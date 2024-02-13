@@ -16,7 +16,7 @@ let values = coding.forEach( (item) => {
 // console.log(NewmyNums);
 
 const myNums = [1,2,3,4,5,6,7,8,9,10]
-// const NewmyNums = myNums.filter( (num) => {
+// const NewmyNums = myNums.filter( (num) => {// condition is must in filter but not in map
 //     const rub= num > 4 //return num>4
 //     return rub
 // })
