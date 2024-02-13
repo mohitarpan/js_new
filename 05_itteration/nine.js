@@ -31,4 +31,4 @@ const shoppingCart =[
 // here we can use reduce method a lot in shoping cart or adding large value at a time
 const PricetoPay = shoppingCart.reduce( (acc,item) => acc + item.price,0)
 
-console.log(PricetoPay);
+console.log(PricetoPay);// basically method of Array 
