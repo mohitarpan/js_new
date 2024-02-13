@@ -16,10 +16,10 @@ let values = coding.forEach( (item) => {
 // console.log(NewmyNums);
 
 const myNums = [1,2,3,4,5,6,7,8,9,10]
-const NewmyNums = myNums.filter( (num) => {
-    const rub= num > 4 //return num>4
-    return rub
-})
+// const NewmyNums = myNums.filter( (num) => {
+//     const rub= num > 4 //return num>4
+//     return rub
+// })
 
 // console.log(NewmyNums);// it will show empty arrya its means "filter operation" did not return any thing 
 // for returning something return keyword must be there or u can say that manual return    
@@ -31,7 +31,7 @@ myNums.forEach( (item) => {
         NewNums.push(item)
     }
 })
-// console.log(NewNums);
+console.log(NewNums);
 
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
@@ -49,4 +49,4 @@ let userBooks = books.filter( (bk) => bk.genre === 'History')
 userBooks = books.filter( (bk)=>{
     return bk.publish>= 1995 && bk.genre === 'History'
 } )
-console.log(userBooks);
+// console.log(userBooks);
