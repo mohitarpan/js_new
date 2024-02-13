@@ -48,3 +48,4 @@ map.forEach((key,values) =>{
 })
 //  if we gives key as argument of arrow function it return the map values 
 // it gives values first then key 
+// foreach did not return the values
