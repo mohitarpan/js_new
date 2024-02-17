@@ -19,9 +19,9 @@ const regularUser = {
         }
     }
 }
-// console.log(regularUser["fullname"[userfullname[firstname]]]); we can not access object inside an object(nested) with [] method it only be accesed by "." method 
-// console.log(regularUser.fullname.userfullname.lastname); 
-// console.log(typeof (userfullname));
+console.log(regularUser["fullname"[userfullname[firstname]]]); we can not access object inside an object(nested) with [] method it only be accesed by "." method 
+ console.log(regularUser.fullname.userfullname.lastname); 
+console.log(typeof (userfullname));
 // optional chaining ? if full name was not present// read about it 
 //  ? for  Api
 //  merge of two objects 
