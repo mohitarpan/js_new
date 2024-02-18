@@ -15,7 +15,17 @@
 <body class="bg-black">
     <div >
         <h1 id="title" class="heading">DOM learning on chai and code<span style ="display: none;">Test text </span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
         <p> aliquid amet blanditiis dignissimos mollitia!</p>
+        <input type="password" name="email" id="">
+        <ul>
+            <li>one</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
     </div>
 </body>
 </html>
@@ -66,10 +76,38 @@ o/p :  DOM learning on chai and code Test text
 it will show only which is visible in browser or it follows the css properties of all kind like display none on span attribute 
 0/p: Dom learning on chai and code 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                Query selector
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\
+document.QuerySelector('h2')
+it will give one first h2 tag not all for all h2 tag we need to give change the syntax
+
+document.querySelector('ul')
+<ul>​…​</ul>​
+const myul = document.querySelector('ul')
+undefined
+myul.querySelector('li')
+<li>​…​</li>​
+const turngreen = myul.querySelector('li')
+undefined
+turn
+turngreen.style.backgroundColor ="green"
+'green'
+turngreen.style.padding ="15px"
+'15px'
+turngreen.innerText
+'one'
+turngreen.innerText = "five"
+'five'
+
+document.QuerySlectorAll
 
 
-
+all css selector are supported here in inspect console
 
 
 -->
+
+Nodelist [] and htmlcollection are not a pure array
+<!-- for Node list we have to put class write like this nodelsist[0] for specific  -->
 
