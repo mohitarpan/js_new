@@ -14,7 +14,7 @@
 </head>
 <body class="bg-black">
     <div >
-        <h1 id="title" class="heading">DOM learning on chai and code </h1>
+        <h1 id="title" class="heading">DOM learning on chai and code<span style ="display: none;">Test text </span></h1>
         <p> aliquid amet blanditiis dignissimos mollitia!</p>
     </div>
 </body>
@@ -49,5 +49,27 @@ undefined-->
 
 
 
+<!-- 
+    titel.innerHTML vs .textcontent vs innerText
+ 
+one >== tittle .innerHTML it reflect all html stuff which is applied on any tag just for example :
+ INput :<h1 id="title" class="heading">DOM learning on chai and code<span style ="display: none;">Test text </span></h1>
+outPUt: DOM learning on chai and code<span style="display: none;">Test text </span>'
+if we use any html tag inside this it will refelect it too
+--------------------------------------------------------------------------------
+.textContent
+it will show all content which is removed by siplay or any css properties
+just like above example it will show 
+o/p :  DOM learning on chai and code Test text
+--------------------------------------------------------------------------------
+.innerText
+it will show only which is visible in browser or it follows the css properties of all kind like display none on span attribute 
+0/p: Dom learning on chai and code 
 
+
+
+
+
+
+-->
 
