@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div')// it is created in memory not in browser so it will not shown in browser
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")// setattribute always give in the form of key and values only
+    div.style.backgroundColor =" green"
+    div.style.padding = "12px"
+    // div.innerText= "chai aur code " // it is widely used because it overwrite thing not accually write the value so there are two cycle aka round trip 
+    const addText = document.createTextNode("chai aur code with Hitesh Sir")
+    div.appendChild(addText)
+    // After this line we use appendchild(div) for w 
+    document.body.appendChild(div)
+    </script>
+</html>
