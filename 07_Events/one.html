@@ -37,16 +37,49 @@
 //atachEvent()
 // jQuery - on  //---- same task is done by these thing 
 
-
-document.getElementById('owl').addEventListener('click', function(e){
-    console.log(e);
-},false)
 // Event propagation
 // here are two ways of event propagation in the HTML DOM, bubbling and capturing.
 // In bubbling_propagation is run inside-->out like if we click on owl it will reflect
 // In capturing the outer most element's event is handled first and then the inner: the <div> element's click event will be handled first, then the <p> element's click event.
 // 
 // The default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation.
+
+
+// here we can learn if we set fasle then what happen (event_propagation ) behave bubble
+
+
+// document.getElementById('images').addEventListener('click', function(e){
+//     console.log("Har Har Mahadev  ki jai" );
+// },false)
+// document.getElementById('owl').addEventListener('click', function(e){
+//     console.log("owl clicked");
+// },false)
+
+//  here is event_propagation behave capuring out then in (out-->In) 
+
+
+// document.getElementById('images').addEventListener('click', function(e){
+//     console.log("Har Har Mahadev  ki jai" );
+// },true)
+// document.getElementById('owl').addEventListener('click', function(e){
+//     console.log("owl clicked");
+// },true)
+
+
+
+document.getElementById('images').addEventListener('click', function(e){
+    console.log("Har Har Mahadev  ki jai" );
+},false)
+document.getElementById('owl').addEventListener('click', function(e){
+    console.log("owl clicked");
+    e.stopPropagation()// with this we can stop inside out and vice versa of event_propagation
+},false)
+
+document.getElementById('google').addEventListener('click',function(e){
+    e.preventDefault();
+    console.log("Google clicked");
+},false)
+
 
 
 
