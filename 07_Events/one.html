@@ -29,9 +29,33 @@
 // -------------------------------------------------------------------
 // latest Approach event listner can listen a lots of event drag and drop kwyboards keys mouse click etc 
 
-document.getElementById('owl').addEventListener
+// document.getElementById('owl').addEventListener('click', function(){
+//     alert("owl clicked again")
+// },false) // there three paramenter in event listner fist one is event_name and then function(){write what u wants function to perform} then last parameter is useCapture which is default value is false 
+
+// these are few event listner:-
+//atachEvent()
+// jQuery - on  //---- same task is done by these thing 
 
 
+document.getElementById('owl').addEventListener('click', function(e){
+    console.log(e);
+},false)
+// Event propagation
+// here are two ways of event propagation in the HTML DOM, bubbling and capturing.
+// In bubbling_propagation is run inside-->out like if we click on owl it will reflect
+// In capturing the outer most element's event is handled first and then the inner: the <div> element's click event will be handled first, then the <p> element's click event.
+// 
+// The default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation.
+
+
+
+
+//  Events need to study more 
+// type, timestamps, defaultPrevented(we can stop the default behaviour of that too)
+// target , toElements,scrElement,currentTarget
+// clientX, clientY,screenX, screenY
+// altKey ,ctrlkey,shifkey, keyCode
 </Script>
 </html>
 <!-- all the events in js are run sequentially  -->
