@@ -94,6 +94,17 @@
 // Activites or Goal(when ever i click on the image it vanished)
 
 document.querySelector('#images').addEventListener('click',function(e){
+    console.log(e.target.parentNode);// when u click on any list item rather than image it vanish every thing 
+
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+    
+},false)
+
+
+
+document.querySelector('#images').addEventListener('click',function(e){
     // console.log(e.target.parentNode);// when u click on any list item rather than image it vanish every thing 
     console.log(e.target.tagName);
     if(e.target.tagName === 'IMG'){
