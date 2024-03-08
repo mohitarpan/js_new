@@ -67,18 +67,19 @@
 
 
 
-document.getElementById('images').addEventListener('click', function(e){
-    console.log("Har Har Mahadev  ki jai" );
-},false)
-document.getElementById('owl').addEventListener('click', function(e){
-    console.log("owl clicked");
-    e.stopPropagation()// with this we can stop inside out and vice versa of event_propagation
-},false)
+// document.getElementById('images').addEventListener('click', function(e){
+//     console.log("Har Har Mahadev  ki jai" );
+// },false)
+// document.getElementById('owl').addEventListener('click', function(e){
+//     console.log("owl clicked");
+//     e.stopPropagation()// with this we can stop inside out and vice versa of event_propagation
+// },false)
 
-document.getElementById('google').addEventListener('click',function(e){
-    e.preventDefault();
-    console.log("Google clicked");
-},false)
+// document.getElementById('google').addEventListener('click',function(e){
+//     e.preventDefault();
+//     e.stopPropagation();
+//     console.log("Google clicked");
+// },false)
 
 
 
@@ -89,6 +90,28 @@ document.getElementById('google').addEventListener('click',function(e){
 // target , toElements,scrElement,currentTarget
 // clientX, clientY,screenX, screenY
 // altKey ,ctrlkey,shifkey, keyCode
+
+// Activites or Goal(when ever i click on the image it vanished)
+
+document.querySelector('#images').addEventListener('click',function(e){
+    // console.log(e.target.parentNode);// when u click on any list item rather than image it vanish every thing 
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+    }
+    
+},false)
+
+
+
+
+
+
+
+
+// removeIt.parentNode.removechild(removeIt)
 </Script>
 </html>
 <!-- all the events in js are run sequentially  -->
