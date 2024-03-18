@@ -16,3 +16,10 @@
 
 # WebApi only meet in browser only in browser 
 # task_Queue is the only thing which help javascript to be fast and asynchronoues  
+
+# Trick question 
+# if the settime out is zero is it must be esecuted within a 0 time just take a example :
+1 
+settime(0,console.log(2))
+3
+output: 1,3,2 why 2 executed late becuase when settime reach to the webapi it goes ti task Queue and and added to stack again within time been step 3 executed and then settimeout executed
