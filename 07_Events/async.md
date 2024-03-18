@@ -10,4 +10,9 @@
 # blocking code VS   Non Blocking code 
 # blocking code is block the flow of program //example: just if u come to my home and i am busy to bring you a glass of water and sying a don't open album of family i have to also watch this so this is what we are doing we are blocking someone 
 
-# in Non- blocking code we give a liberty to the guest weather he can move and took albumn and take picture from that it just 
+# in Non- blocking code we give a liberty to the guest weather he can move and took albumn and take picture from that it just ;
+
+# blocking and non blocking both have used case
+
+# WebApi only meet in browser only in browser 
+# task_Queue is the only thing which help javascript to be fast and asynchronoues  
