@@ -11,12 +11,25 @@
 </body>
 <script>
 // there function are not the part of core js but these function comes with browser and api
-   console.log("pam palu");
-    setTimeout(function() {
-        console.log("Hey Everyone this is Arpan's Home");
-    },2000 )//time in mileseconds so 2000 = 2second
-    // handler is function which is unnamed just like callback function
-    console.log("Sawera hoga ");
+//    console.log("pam palu");
+//     setTimeout(function() {
+//         console.log("Hey Everyone this is Arpan's Home");
+//     },2000 )//time in mileseconds so 2000 = 2second
+//     // handler is function which is unnamed just like callback function
+//     console.log("Sawera hoga ");
+const velo = function() {
+    console.log("hey Everyone this is Arpan's reko");
+}
+const changelafda = document.querySelector('h1').innerHTML = " Hindi is the best langauage"
+// setTimeout(velo,2000)     //here we do only refernce a function or call back function or handler
+
+const Changeme = setTimeout(changelafda,2000)
+
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(Changeme)
+    console.log("Stopped")
+})
 
 </script>
 </html>
