@@ -13,8 +13,8 @@
     // const xhr = new XMLHttpRequest();
     const xhr = new XMLHttpRequest(); // it is method which have all ready state and u can send or recieve your data through it and it is method and we creat this as object 
     xhr.open('GET',requestUrl) // open is not called by itself we need to call send()
-    xhr.onreadystatechange = function () {
-        console.log(xhr.readyState);
+    xhr.onreadystatechange = function () { //onreadystatechange is used to moniter things continously 
+        console.log(xhr.readyState);// readystate is used fro check the state.. like ready open send etc;
     }
     xhr.send();
     // it requires two parameter one is method just like giving any request ,
@@ -26,3 +26,7 @@
 2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
 3	LOADING	Downloading; responseText holds partial data.
 4	DONE	The operation is complete. -->
+
+
+
+
