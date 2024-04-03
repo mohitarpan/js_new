@@ -16,8 +16,15 @@
     xhr.onreadystatechange = function () { //onreadystatechange is used to moniter things continously 
         console.log(xhr.readyState);// readystate is used fro check the state.. like ready open send etc;
         if(xhr.readyState == 4){
-            console.log(this.responseText); // here response tage is data which is given through url and if we dont use this then we can not able to fectch that data on it..
+            
+            // console.log(this.responseText); // here response tage is data which is given through url and if we dont use this then we can not able to fectch that data on it..
+            const data = JSON.parse(this.responseText) // parse convert the sting into objects
+            // console.log(data.followers);     // it show undefined in console becuase it is in the form of string
+            console.log(data);    //most of the time respones are come in string only we have to convert alll by JSon.parse to sting to object 
+            console.log(data.followers);
         }
+        // this refer to current context
+
     }
     xhr.send();
     // it requires two parameter one is method just like giving any request ,
