@@ -85,13 +85,27 @@ async function consumedPromiseFive(){
 }
 consumedPromiseFive()
 
-async function getUserAll(){
-    const respond = await fetch('')
+// async function getUserAll(){
+//     try {
+//         const respond = await fetch('https://jsonplaceholder.typicode.com/posts')
+//     const data =  await respond.json() // it will take time to convert so we use await for it 
+//     console.log(data);
+//     } catch (erro) {
+//         console.log("E: "); 
+//     }
+// }
+// getUserAll()
+
+fetch('https://jsonplaceholder.typicode.com/posts')// it include in es6 before that it is librabry now it become object 
+.then((response) =>{
+    return response.json()
+}).then((data) => {
+    console.log(data)
 }
+)
+.catch((error) => console.log(error))
 
-
-
-
+// why this all printe first than above valuse
 
 
 
