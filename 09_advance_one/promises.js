@@ -105,7 +105,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')// it include in es6 before t
 )
 .catch((error) => console.log(error))
 
-// why this all printe first than above valuse
+// why this all print first than above valuse
 
 
 
